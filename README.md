@@ -140,6 +140,7 @@ The system implements comprehensive error handling:
 - Answer at least 10 image questions in the same call, without degradation in response times, with an equal split of images featuring people and those that do not. (TBD)
 - ~The implemented model should be streamed and have Time to first Token of <500ms.~ ✅
 - ~Ensure images are captured reliably when necessary and intended.~ ✅
+- ~README file should be in a way that lets us run the project with as little modifications as possible.~ ✅
 
 
 ### This project is made by Kevin Antony, drop in an [email](mailto:kevinantony.work@gmail.com) for any queries.
