@@ -1,4 +1,4 @@
-# Vision-Enhanced Voice Assistant
+# Ally
 
 A real-time voice and vision assistant built with LiveKit, designed specifically for blind and visually impaired users. The assistant, named Ally, processes both voice commands and video input to provide contextual assistance.
 
@@ -14,7 +14,7 @@ A real-time voice and vision assistant built with LiveKit, designed specifically
 ## Technical Stack
 
 - LiveKit for real-time communication
-- OpenAI GPT-4 for natural language processing
+- OpenAI GPT for image analysis & natural language processing
 - Deepgram for Speech-to-Text
 - Silero for Voice Activity Detection
 - OpenCV for image processing
@@ -24,8 +24,8 @@ A real-time voice and vision assistant built with LiveKit, designed specifically
 
 1. Clone the repository:
 ```bash
-git clone [repository-url]
-cd [repository-name]
+git clone https://github.com/kevnantony/ally.git
+cd ally
 ```
 
 2. Install dependencies:
@@ -34,18 +34,21 @@ pip install -r requirements.txt
 ```
 
 3. Set up environment variables:
-```bash
-cp .env.example .env
-# Edit .env with your API keys and configuration
+
+Step 1: Create a .txt file and paste the following things there. Kindly add your actual API Keys right after =.
+
 ```
+LIVEKIT_URL=(Redacted)
+LIVEKIT_API_KEY=(Redacted)
+LIVEKIT_API_SECRET=(Redacted)
+DEEPGRAM_API_KEY=(Redacted)
+OPENAI_API_KEY=(Redacted)
+```
+Then type this in your terminal:
 
-## Configuration
-
-Required environment variables:
-- `OPENAI_API_KEY`: Your OpenAI API key
-- `DEEPGRAM_API_KEY`: Your Deepgram API key
-- `LIVEKIT_API_KEY`: Your LiveKit API key
-- `LIVEKIT_API_SECRET`: Your LiveKit API secret
+```bash
+mv file.txt .env
+```
 
 ## Architecture
 
@@ -98,15 +101,6 @@ $ pip install -r requirements.txt
 
 You need to set up the following environment variables:
 
-
-```
-LIVEKIT_URL=(Redacted)
-LIVEKIT_API_KEY=(Redacted)
-LIVEKIT_API_SECRET=(Redacted)
-DEEPGRAM_API_KEY=(Redacted)
-OPENAI_API_KEY=(Redacted)
-```
-
 Then, run the assistant:
 
 ```
@@ -125,6 +119,7 @@ The assistant will:
 4. Begin processing voice and video input
 5. Respond to user queries with context-aware assistance
 
+
 ## Error Handling
 
 The system implements comprehensive error handling:
@@ -140,15 +135,13 @@ The system implements comprehensive error handling:
 - Asynchronous processing for non-blocking operations
 - Memory-efficient image processing pipeline
 
-# Features to add 
+## Features to add 
 
-- Answer at least 10 image questions in the same call, without degradation in response times, with an equal split of images featuring people and those that do not.
+- Answer at least 10 image questions in the same call, without degradation in response times, with an equal split of images featuring people and those that do not. (TBD)
 - ~The implemented model should be streamed and have Time to first Token of <500ms.~ ✅
 - ~Ensure images are captured reliably when necessary and intended.~ ✅
 
 
-## License
-
-This project is was made by Kevin Antony, drop in an [email] (kevinantony.work@gmail.com) for details.
+## This project is was made by Kevin Antony, drop in an [email](mailto:kevinantony.work%40gmail.com? subject=Hi)
 
 
