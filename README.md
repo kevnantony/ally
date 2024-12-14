@@ -142,6 +142,6 @@ The system implements comprehensive error handling:
 - ~Ensure images are captured reliably when necessary and intended.~ ✅
 
 
-### This project is made by Kevin Antony, drop in an [email](mailto:kevinantony.work@gmail.com)
+### This project is made by Kevin Antony, drop in an [email](mailto:kevinantony.work@gmail.com) for any queries.
 
 
