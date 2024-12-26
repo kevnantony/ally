@@ -99,7 +99,7 @@ $ pip install -U pip
 $ pip install -r requirements.txt
 ```
 
-You need to set up the following environment variables:
+You need to set up the following environment variables.
 
 Then, run the assistant:
 
